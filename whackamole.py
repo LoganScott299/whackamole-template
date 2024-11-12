@@ -27,8 +27,8 @@ def main():
                 eventX,eventY = event.pos
                 eventSquare = findSquare(eventX, eventY)
                 if eventSquare == moleSquare:
-                    moleX = random.randrange(0,20+1) * 32
-                    moleY = random.randrange(0, 16+1) * 32
+                    moleX = random.randrange(0,20) * 32
+                    moleY = random.randrange(0, 16) * 32
             pygame.display.flip()
             clock.tick(60)
     finally:
